@@ -1,0 +1,42 @@
+{
+  "name": "express-register-routes",
+  "version": "1.0.0",
+  "description": "A tiny express.js helper that registers all your routes based on file names and folder structure",
+  "author": "Brandon Sara (https://bsara.github.io)",
+  "license": "ISC",
+  "homepage": "https://github.com/bsara/express-register-routes#readme",
+  "repository": "bsara/express-register-routes",
+  "keywords": [
+    "express",
+    "expressjs",
+    "express.js",
+    "route",
+    "router",
+    "routers",
+    "routes",
+    "routing",
+    "automatic"
+  ],
+  "engines": {
+    "node": ">=5.1"
+  },
+  "files": [
+    "/index.js",
+    "/LICENSE",
+    "/README.md"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "express": "^4.x",
+  },
+  "dependencies": {
+    "glob": "^7.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-bsara": "latest"
+  }
+}

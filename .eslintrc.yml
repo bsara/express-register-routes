@@ -1,0 +1,12 @@
+root: true
+
+extends:
+  - bsara
+
+env:
+  node: true
+
+
+
+rules:
+  global-require: off
