@@ -15,6 +15,7 @@
     "routers",
     "routes",
     "routing",
+    "auto",
     "automatic"
   ],
   "engines": {
@@ -30,13 +31,13 @@
     "lint": "eslint ."
   },
   "peerDependencies": {
-    "express": "^4.x",
+    "express": "^4.x"
   },
   "dependencies": {
     "glob": "^7.1.1"
   },
   "devDependencies": {
-    "eslint": "^3.9.1",
+    "eslint": "^3.11.1",
     "eslint-config-bsara": "latest"
   }
 }

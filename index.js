@@ -3,6 +3,7 @@ const path = require('path');
 
 
 
+
 /**
  * Registers all routes based on file names and folder structure starting in the
  * directory specified by the `routesRootDirPath` parameter.
@@ -18,14 +19,13 @@ module.exports = function registerRoutes(app, { prefix = '', rootDir = 'routes' 
 };
 
 
+
 /** @private */
 function _registerRoutes(app, routesDirPath, routePrefix) {
   glob.sync('!(_)*.js', { cwd: routesDirPath, nosort: true }).forEach(function(routeFilePath) {
     let routePath = `${routePrefix}/${routeFilePath.replace('.js', '')}`;
 
     app.use(routePath, require(path.join('..', routesDirPath, routeFilePath)));
-
-    console.log(`Registered Route: '${routePath}'`);
   });
 
   _registerSubRoutes(app, routesDirPath, routePrefix);

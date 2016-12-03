@@ -5,8 +5,6 @@
 
 > A tiny express.js helper that registers all your routes based on file names and folder structure.
 
-TODO
-
 
 
 # Install
