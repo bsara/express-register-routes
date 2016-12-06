@@ -25,7 +25,7 @@ function _registerRoutes(app, routesDirPath, routePrefix) {
   glob.sync('!(_)*.js', { cwd: routesDirPath, nosort: true }).forEach(function(routeFilePath) {
     let routePath = `${routePrefix}/${routeFilePath.replace('.js', '')}`;
 
-    app.use(routePath, require(path.join('..', routesDirPath, routeFilePath)));
+    app.use(routePath, require(path.join(process.cwd(), routesDirPath, routeFilePath)));
   });
 
   _registerSubRoutes(app, routesDirPath, routePrefix);
