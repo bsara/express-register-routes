@@ -1,6 +1,6 @@
 {
   "name": "express-register-routes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny express.js helper that registers all your routes based on file names and folder structure",
   "author": "Brandon Sara (https://bsara.github.io)",
   "license": "ISC",
