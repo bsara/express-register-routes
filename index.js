@@ -6,7 +6,7 @@ const path = require('path');
 
 /**
  * Registers all routes based on file names and folder structure starting in the
- * directory specified by the `routesRootDirPath` parameter.
+ * directory specified by the `options.rootDir` parameter.
  *
  * @param {express} app                         - Object used to register routes.
  * @param {Object} [options]
@@ -15,7 +15,7 @@ const path = require('path');
  *                                                NOTE: Path is expected to be relative to `process.cwd()`.
  */
 module.exports = function registerRoutes(app, { prefix = '', rootDir = 'routes' } = {}) {
-  _registerRoutes(app, routesRootDirPath, routePrefix);
+  _registerRoutes(app, rootDir, prefix);
 };
 
 

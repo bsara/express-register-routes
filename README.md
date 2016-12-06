@@ -20,8 +20,8 @@ $ npm install --save express-register-routes
 #### index.js
 
 ```javascript
-const express               = require('express');
-const expressRegisterRoutes = require('express-register-routes');
+const express        = require('express');
+const registerRoutes = require('express-register-routes');
 
 
 const app = express();
@@ -35,7 +35,7 @@ const app = express();
 // Example:
 //   For `routes/users.js`, `/api/users` will be registered.
 //   For `routes/users/:userId/address`, `/api/users/:userId/address` will be registered.
-expressRegisterRoutes(app, '/api');
+registerRoutes(app, { prefix: '/api' });
 
 
 app.listen(3000, function() {
